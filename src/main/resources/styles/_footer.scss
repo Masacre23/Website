@@ -1,0 +1,45 @@
+footer {
+	//background-color: $mainColor !important;
+	>div>section{
+		margin-top: auto;
+		transition: 0.35s;
+	}
+
+	section.hide {
+		margin-bottom: -200px; 
+	}
+
+	/*@media screen and (min-width: $footerChange){
+		>div>section{
+			height: 54px !important;
+			margin-top: -80px !important; 
+			border: 4px solid white;
+			//background-color: $mainColor + c9 !important;
+			background: linear-gradient(10deg, $firstColor + c9, $secondaryColor + c9, $terciaryColor + c9) !important;
+			position: absolute !important;
+			border-radius: 10px;
+			height: 0px;
+		}
+	}*/
+
+	a.btn-circle {
+		position: absolute;
+		top: 0;
+		left: 0;
+	    width: 40px;
+	    height: 40px;
+	    border-radius: 100%;
+	    text-align: center;
+	    border: none;
+	    z-index: 2;
+	}
+
+	a.btn-circle:hover {
+	  	filter: brightness(85%);
+	}
+
+	.fab{
+		line-height: 1.725!important;
+	}
+
+}

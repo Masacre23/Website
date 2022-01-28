@@ -1,0 +1,124 @@
+.carousel {	
+
+	.list-inline {
+	    white-space:nowrap;
+	    overflow-x:auto;
+
+	    @media screen and (max-width: 991px){
+			justify-content: flex-start !important;
+		}
+
+	    .list-inline-item {
+	    	min-width: 120px;
+	    }
+	}
+
+	.carousel-indicators {
+	    position: static;
+	    left: initial;
+	    width: initial;
+	    margin-left: initial;
+	}
+
+	.carousel-indicators > li {
+	    width: initial;
+	    height: initial;
+	    text-indent: initial;
+	    background: none !important;
+	    padding: 0 !important;
+	    margin-bottom: 5px !important;
+
+		img {
+    		width: 120px;
+    		height: 90px;
+    	}
+	}
+
+	.carousel-indicators > li.active img {
+	    opacity: 0.7;
+	}
+
+	.embed-responsive {
+		margin-bottom: 20px !important;
+    	margin-top: 20px !important;
+    	width: 70%;
+    	margin: auto;
+	}
+
+	iframe, img {
+		object-fit: cover;
+    	border: 0.4rem solid #ffe9bd !important;
+	    border-radius: 0.8rem;
+	    border-top-color: #a36d00 !important;
+	    border-right-color: $terciaryColor !important;
+	    border-bottom-color: #ffd88a !important;
+	}
+
+	.object-position-top {
+		object-position: top;
+	}
+
+	.object-position-bottom {
+		object-position: bottom;
+	}
+
+	.carousel-item {
+
+		ul {
+			margin: none !important;
+			padding: revert !important;
+			list-style-type: square !important;
+			li {
+				background: none !important;
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+		}
+	}
+
+	button {
+		margin: -110px;
+		position: absolute;
+		width: auto;
+
+		@media screen and (max-width: 650px){
+			margin: -30px;
+		}
+	}
+
+	.embed-responsive {
+		>img.zoom {
+			max-width: 100%;
+			margin: auto;
+			object-position: center;
+			object-fit: contain;
+  			z-index: 9999999;
+  			position: fixed;
+  			background: black;
+  			border-radius: 0px;
+  			border: none !important;
+  		}
+	}
+
+	.zoom-icon {
+		border-radius: 0.8rem;
+		background: #ffffffc2;
+		position: absolute;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    padding-top: 25%;
+	    opacity: 0;
+		transition: 1s;
+
+		img {
+			border: none !important;
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.zoom-icon:hover, .zoom-icon:active {
+		opacity: 1;
+	}
+}

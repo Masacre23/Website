@@ -1,0 +1,59 @@
+plugins {
+    id 'org.jetbrains.kotlin.js' version '1.5.31'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven") }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-js"
+
+    implementation("org.jetbrains.kotlinx:kotlinx-html-js:$kotlinxHtmlVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+}
+
+kotlin {
+    js {
+        browser {
+            webpackTask {
+                cssSupport.enabled = true
+            }
+
+            runTask {
+                cssSupport.enabled = true
+            }
+
+            testTask {
+                useKarma {
+                    useChromeHeadless()
+                    webpackConfig.cssSupport.enabled = true
+                }
+            }
+        }
+        binaries.executable()
+    }
+}
+
+task deploy() {
+    dependsOn 'build'
+    group = 'build'
+    doLast {
+        copy {
+            from 'build/distributions/MyWeb.js'
+            into 'build/../'
+        }
+        copy {
+            from 'build/processedResources/js/main'
+            into 'build/../'
+        }
+        delete 'main.css.map'
+        delete 'main.scss'
+        delete 'styles'
+    }
+}

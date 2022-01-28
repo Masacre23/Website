@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+   
+   
+	<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lte IE 8]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]-->
+        <title>Adri&aacute;n Guevara Alonso</title>
+        <script type="text/javascript">
+		function changeSrc(val){
+			/*var nodos = document.getElementById(val);
+			var atributo = nodos.attributes.getNamedItem("src").nodeValue;
+			var elementoRecibe = document.getElementById("espacioImagen");
+			elementoRecibe.setAttribute("src", atributo);*/
+			document.getElementById("espacioImagen").setAttribute("src", val);;
+		}
+		</script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<!--<?php include 'form.php';?>-->
+    </head>
+
+    <body>
+        <canvas id="canvas" style="background: rgb(153, 153, 153); position: fixed; top: 0px; left: 0px;" width="100%" height="100%">
+            Canvas not supported by your browser.
+        </canvas>
+        <div style="position:relative; ">
+        <div>
+        	<nav id="nav-links">
+			<ul class="horizontal">
+  					<li class="horizontal"><a href="#Home" class="myButton" onClick="toggle('Home', true)">Home</a></li>
+                	<li class="horizontal"><a href="#EducationSkills" class="myButton" onClick="toggle('EducationSkills', true)">Education & Skills</a></li>
+  					<li class="horizontal"><a href="#Projects" class="myButton" onClick="toggle('Projects', true)">Projects</a></li>
+                    <li class="horizontal"><a href="#About" class="myButton" onClick="toggle('About', true)">About</a></li>
+  					<li class="horizontal"><a href="#Contact" class="myButton" onClick="toggle('Contact', true)">Contact</a></li>
+				</ul>
+			</nav>
+        	</div>
+            
+            <div id="Home" class="fade">
+            	<div class="infopanel">
+                <ul>
+                	<li style="text-decoration: underline;">Info</li>
+                    <li style="font-family:'Lucida Console', Monaco, monospace; font-size:15px;">
+                    <ul class="image">
+                        	<li class="face">Este soy yo, usa las flechas para moverme.</li>
+                            <li class="face" style="background:url(house.png)no-repeat left top 15px;background-size:25px 25px;">Entra en las casas para ver informaci&oacute;n sobre mi y mis proyectos.</li>
+                            <li class="face" style="background:url(contrato.png)no-repeat left top 15px;background-size:25px 25px;">Recoge las ofertas de empleo que hay repartidas por el mapa.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="x" onClick="toggle('Home', false)" >X</span>
+                </div>
+            </div>
+            
+            <div id="EducationSkills" style="display: none;" class="fade">
+            	<div class="infopanel">
+                <div style="width:50%;  position:absolute;">
+                <ul>
+                	<li style="text-decoration: underline;">Education</li>
+                    <li style="font-family:'Lucida Console', Monaco, monospace; font-size:15px;">
+                    	<ul class="image">
+                        	<li class="face" style="background:url(upc.png)no-repeat left top 15px;background-size:25px 25px;">Master de Diseño y Creación de Videojuegos en la Universidad Politécnica de Cataluña.(2016/17)</li>
+                            <li class="face" style="background:url(starcruiser.png)no-repeat left top 15px;background-size:25px 25px;">Programador con 5 meses de experiencia de prácticas en Starcruiser Studio.</li>
+                            <li class="face" style="background:url(uv.png)no-repeat left top 15px;background-size:25px 25px;">Graduado en Ingenier&iacute;a Multimedia en la Universidad de Valencia.(2012/16)</li>
+                        </ul>
+                   </li>
+                </ul>
+                </div>
+                <div style="width:50%; position:absolute; margin-left:50%;">
+                <ul>
+                	<li style="text-decoration: underline;">Skills</li>
+                    <li style="font-family:'Lucida Console', Monaco, monospace; font-size:15px;">
+                    	<ul class="image">
+                        	<li class="face"><b>Sistemas operativos:</b> Windows, Android, Linux.</li>
+                            <li class="face"><b>Lenguajes:</b> C++, C#, C, Java, Python, HTML, Xml, JavaScript, PHP, CSS.</li>
+                            <li class="face"><b>Librer&iacute;as:</b> OpenGL</li>
+                            <li class="face"><b>Bases de datos:</b> MySQL</li>
+                            <li class="face"><b>Programas:</b> Unity, Cocos2D, Unreal Engine, Visual Studio, Blender, DreamWeaver, Android Studio, NetBeans.</li>
+                        </ul>
+                   </li>
+                </ul>
+                </div>
+                <span class="x" onClick="toggle('EducationSkills', false)" >X</span>
+                </div>
+            </div>
+            
+            <div id="Projects" style="display: none;" class="fade">
+            	<div class="infopanel">
+                <div  style="position:relative; height:12%;">
+                <ul>
+                	<li style="text-decoration: underline;">Projects</li>                   
+                </ul>
+                </div>
+                    <div class="divImagenGaleria" style="position:relative; height:18%;">
+                	<img src="upsidedown.jpg" class="imagenGaleria" onClick="changeSrc('https://www.youtube.com/embed/XzZSLt3-GAs');toggle('upsidedown_text', true);
+                    toggle('doubledragon_text', false); toggle('deadoralive_text', false); toggle('feedyourplanet_text', false);"/>
+                	<img src="doubledragon.jpg" class="imagenGaleria" onClick="changeSrc('https://www.youtube.com/embed/w1E6819xLXg');toggle('upsidedown_text', false);
+                    toggle('doubledragon_text', true); toggle('deadoralive_text', false); toggle('feedyourplanet_text', false);"/>
+                    <img src="feedyourplanet.jpg" class="imagenGaleria" onClick="changeSrc('https://www.youtube.com/embed/EW-VpzlLMnQ');toggle('upsidedown_text', false);
+                    toggle('doubledragon_text', false); toggle('deadoralive_text', false); toggle('feedyourplanet_text', true);"/>
+                    <img src="deadoralive.jpg" class="imagenGaleria" onClick="changeSrc('https://www.youtube.com/embed/DbmxqT8sanI');toggle('upsidedown_text', false);
+                    toggle('doubledragon_text', false); toggle('deadoralive_text', true); toggle('feedyourplanet_text', false);"/>
+                </div>
+                
+                <div class="divVideo" style="position:relative;">
+                    <iframe id="espacioImagen" width="100%" height="100%" src="https://www.youtube.com/embed/XzZSLt3-GAs" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <div id="upsidedown_text" style="font-family:'Lucida Console', Monaco, monospace; font-size:15px; position:relative; height:14%; width:90%; top:20px;">
+                <b>Upside Down(<a href="https://sleepycreepy.carrd.co/">Web</a>, <a href="https://github.com/SleepyCreepy/Upside-Down">Git</a>, 
+                <a href="https://github.com/SleepyCreepy/Upside-Down/releases/tag/1.0-beta">Descarga</a>): 
+                </b>Proyecto del master realizado en Unity 3d junto a cuatro miembros m&aacute;s.
+                </div>
+                
+                <div id="doubledragon_text" style="display:none; font-family:'Lucida Console', Monaco, monospace; font-size:15px; position:relative; height:14%;width:90%; top:20px;">
+                <b>Double Dragon III (<a href="https://masacre23.github.io/DoubleDragon/">Web</a>): 
+                </b>Versi&oacute;n del famoso juego arcade, realizado en C++.
+                </div>
+                
+                <div id="feedyourplanet_text" style="display:none; font-family:'Lucida Console', Monaco, monospace; font-size:15px; position:relative; height:14%;width:90%; top:20px;">
+                <b>Feed Your Planet:</b> Juego Multijugador para m&oacute;vil similar a "agar.io", realizado en Unity3D.
+                </div>
+                
+                <div id="deadoralive_text" style="display:none; font-family:'Lucida Console', Monaco, monospace; font-size:15px; position:relative; height:14%;width:90%; top:20px;">
+                <b>Dead Or Alive:</b> Proyecto de animaci&oacute;n, realizado con Python en Blender.
+                </div>
+                
+                <span class="x" onClick="toggle('Projects', false)" >X</span>
+                </div>
+            </div>
+            
+      		<div id="About" style="display: none;" class="fade">
+            	<div class="infopanel">
+                <ul>
+                	<li style="text-decoration: underline;">About me</li>
+                	<li><img src="circle.png" width=200 height=200></li>
+                    <li style="font-family:'Lucida Console', Monaco, monospace; font-size:15px;"><p>Siempre he sido un apasionado de la informática y los videojuegos.</p>
+					<p>Soy graduado en Ingeniería Multimedia por la Universidad de Valencia, tengo un Máster de Diseño y Desarrollo de Videojuegos de la Universidad Politécnica de Cataluña y he 			realizado unos meses de prácticas en StarCruiser Studio. </p>
+                    <p>Tengo conocimientos centrados en la programación de videojuegos y desarrollo web, ya sea por mi formación o de manera autodidacta. Sobretodo quiero destacar C++, C, C# y Unity3D en cuanto a desarrollo de videojuegos y HTML5, CSS y JavaScript en desarrollo web.</p>
+					<p>Tengo gran facilidad para aprender cualquier cosa que me proponga. Le echo ganas e interés y voy mejorando día a día. Un día puedo estar creándome mi propio gestor de memoria y al otro un minijuego para mi página web. </p>
+					<p>Me gusta trabajar en equipo y que haya una visión en común clara del proyecto que permita llevarlo a cabo de manera satisfactoria, agradable y eficiente.</p></li>
+                </ul>
+                <span class="x" onClick="toggle('About', false)" >X</span>
+                </div>
+            </div>
+            <div id="Contact" style="display: none;" class="fade">
+            	<div class="infopanel">
+                <div style="height:12%;  position:relative;">
+                <ul>
+                	<li style="text-decoration: underline;">Contact</li>
+                    <li style="font-family:'Lucida Console', Monaco, monospace; font-size:15px;"></li>
+                </ul>
+                </div>
+                
+                <div id="form-main">
+  				<div id="form-div">
+    				<form class="form" id="form1" method="post" action="form.php">
+      
+      					<p class="name">
+        					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      					</p>
+      
+      					<p class="email">
+        					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      					</p>
+      
+      					<p class="text">
+        					<textarea name="msg" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      					</p>
+      
+      
+      					<div class="submit" style="height:0;">
+        					<input name="submit" type="submit" value="SEND" id="button-blue"/>
+      					</div>
+    				</form>
+  				</div>
+                </div>
+                
+                <span class="x" onClick="toggle('Contact', false)" >X</span>
+                </div>
+            </div>
+            
+        </div>
+       <script type="text/javascript">
+		   var toggle = function(id, b) {
+  		   var mydiv = document.getElementById(id);
+           //if (mydiv.style.display === 'block' || mydiv.style.display === '')
+		   if(!b)
+		   {
+               mydiv.style.display = 'none';
+			   pause = false;;
+		   }
+           else
+		   {
+			   pause = true;
+               mydiv.style.display = 'block';
+		   }
+		   
+           }
+	   </script>   
+       <script type="application/javascript" src="game.js"></script> 
+     </body>
+</html>
