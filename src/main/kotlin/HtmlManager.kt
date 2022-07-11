@@ -424,7 +424,7 @@ class HtmlManager (){
                         /*+"Playjoy is a collection of different board games like, domino, ludo, UNO,... It's available for desktop, android and IOS."
                         +"I have programmed most of the games, the web page backend, some app features like in-app purchases."
                         +"Furthermore, I had the opportunity of managing a few junior programmers and teach them. (2017-now)"*/
-                        strong { +"4 years " }
+                        strong { +"5 years " }
                         +"of experience in "
                         strong { +"Playjoy" }
                         +" (2017-now).\n\n"
@@ -439,10 +439,19 @@ class HtmlManager (){
                         +"Finally for the app I only have done one feature but it was a big one, I implemented an in-app purchases plugin and created a system to parse data from google and our database and convert it to IOS json and android csv."
                         )
                     }
+                    li{
+                        style = "background-image: url(img/ns-icon.png)"
+                        strong { +"3 years " }
+                        +"of experience in "
+                        strong { +"No Spoon Tech Lab" }
+                        +(" (2017-2020).\n\n"
+                        +"In No Spoon I worked on an app called \"Fallas\". It's the official app of a holiday from Valencia. It's an app based on Pokemon Go.\n\n"
+                        +"It's made with Unity 3D, my focus was on the client side.")
+                    }
                     li {
                         style = "background-image: url(img/starcruiser.png);"
                         //+"Programador con 5 meses de experiencia de prácticas en Starcruiser Studio. (2016)"
-                        strong { +"5 months " }
+                        strong { +"6 months " }
                         +"of experience in "
                         strong{ +"Starcruiser Studio"}
                         +"(2016).\n\nI was commissioned to do a prototype of the next game in "
@@ -476,7 +485,7 @@ class HtmlManager (){
 
             work = popup("modal-xl", "Work", stretch = false) {
                 h1 { +"Work" }
-                carousel(indicatorsImages = listOf("img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png"), stretch = false) {
+                carousel(indicatorsImages = listOf("img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png", "img/fallas.jpg"), stretch = false) {
                     carouselItem(true) {
                         div("images-container"){
                             style = "max-width: 70%;"
@@ -574,6 +583,27 @@ class HtmlManager (){
                                     "It is played individually with the Spanish 40-card deck and the 1 of Coins as a wild card.\n" +
                                     "\n" +
                                     "The rules of this game are similar to: Rummy, Remigio, Canasta")
+                        }
+                    }
+
+                    carouselItem {
+                        div("embed-responsive embed-responsive-16by9") {
+                            imgZoom("img/fallas2.jpg", "object-position-center")
+                        }
+                        p {
+                            b {
+                                +"Fallas("
+                                a(href = "https://play.google.com/store/apps/details?id=com.nospoon.fallasplayandgo", target = "_blank") { +"Store" }
+                                +"): "
+                            }
+                            +("Fallas is an app about our festivities here in Valencia." +
+                                    "\n" +
+                                    "\n" +
+                                    "It's an app similar to Pokemon Go. Users can use their cell phones to overcome geolocated missions that are strategically located in Fallas monuments or key places in the city, get points and compete for gifts through augmented reality games."+
+                                    "\n" +
+                                    "\n" +
+                                    "In addition, the application offers all the tourist information related to the Fallas, such as the location of the monuments, photos, descriptions and featured events, and you can rate the monuments and leave comments."
+                                    )
                         }
                     }
                 }
