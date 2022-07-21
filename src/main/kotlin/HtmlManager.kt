@@ -429,14 +429,21 @@ class HtmlManager (){
                         strong { +"Playjoy" }
                         +" (2017-now).\n\n"
                         strong { +"Playjoy " }
-                        +"is a collection of different "
+                        +"is an app and a website with a collection of different "
                         strong { +"board games "}
-                        +("like, domino, ludo, UNO,... It's a project with multiple parts: HTML5 games, web and app."
+                        /*+("like, domino, ludo, UNO,... It's a project with multiple parts: HTML5 games, web and app."
                         + " I was the first employee of the company so I started in an early stage and I had to do low programing for the game engine and the web page. \n\n"
                         +"My focus was the games, client side and server side, I programmed a total of 5 games: "
                         +"Chinchon, UNO, Ludo, Durak and Bingo. \n\nFurthermore, I had to teach the next employees and supervise them, this helped me to gain a few managing skills."
                         +"\n\nIn relation to the website I have implemented all the backend, including an admin page.\n\n"
-                        +"Finally for the app I only have done one feature but it was a big one, I implemented an in-app purchases plugin and created a system to parse data from google and our database and convert it to IOS json and android csv."
+                        +"Finally for the app I have done some features like in-app purchases plugin and created a system to parse data from google and our database and convert it to IOS json and android csv."
+                        )*/
+
+                        +(
+                                "like, domino, ludo, UNO,... It's a project with multiple parts: HTML5 games, web and app.\n\n"
+                                +"At the beginning the games were made with Unity, I programmed one of them and made the transition to Javascript.\n\n"
+                                +"My focus then was on implementing frontend and backend of 5 games, including server side.\n\n"
+                                +"Aside from that I implemented the website and some app features, like in-app purchases and communication with the app and the games."
                         )
                     }
                     li{
@@ -446,7 +453,9 @@ class HtmlManager (){
                         strong { +"No Spoon Tech Lab" }
                         +(" (2017-2020).\n\n"
                         +"In No Spoon I worked on an app called \"Fallas\". It's the official app of a holiday from Valencia. It's an app based on Pokemon Go.\n\n"
-                        +"It's made with Unity 3D, my focus was on the client side.")
+                        +"It's made with Unity 3D, my focus was on the client side. I programmed part of the UI where the information of the festivities were shown.\n\n"
+                        +"I gain some experience with vuforia by making some Augmented Reality minigames. And I helped making a card game similar to Hearstone in Grefuheroes."
+                        )
                     }
                     li {
                         style = "background-image: url(img/starcruiser.png);"
@@ -485,7 +494,7 @@ class HtmlManager (){
 
             work = popup("modal-xl", "Work", stretch = false) {
                 h1 { +"Work" }
-                carousel(indicatorsImages = listOf("img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png", "img/fallas.jpg"), stretch = false) {
+                carousel(indicatorsImages = listOf("img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png", "img/grefusitos1.webp", "img/fallas.jpg"), stretch = false) {
                     carouselItem(true) {
                         div("images-container"){
                             style = "max-width: 70%;"
@@ -583,6 +592,27 @@ class HtmlManager (){
                                     "It is played individually with the Spanish 40-card deck and the 1 of Coins as a wild card.\n" +
                                     "\n" +
                                     "The rules of this game are similar to: Rummy, Remigio, Canasta")
+                        }
+                    }
+
+                    carouselItem {
+                        div("embed-responsive embed-responsive-16by9") {
+                            imgZoom("img/grefusitos2.webp", "object-position-bottom")
+                        }
+                        p {
+                            b {
+                                +"Grefuheroes("
+                                a(href = "https://play.google.com/store/apps/details?id=com.playandgo.grefuheroes", target = "_blank") { +"Store" }
+                                +"): "
+                            }
+                            +("Grefuheroes is a Unity app similar to Pokemon Go but it has card battles similar to Hearthstone." +
+                                    "\n" +
+                                    "\n" +
+                                    "Basically you earn images from Grefusa snacks and then with AR you scan those images to add the heroes to your collection."+
+                                    "\n" +
+                                    "\n" +
+                                    "Then you use your heroes to conquer enemy bases."
+                                    )
                         }
                     }
 
