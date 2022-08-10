@@ -339,13 +339,15 @@ class HtmlManager (){
                             }
                         }*/
 
-                        div("pad-container") {
-                            a(classes = "btn btn-primary btn-circle m-1", target = "_blank") {
-                                style = "background-color: #0082ca;"
-                                href = "https://www.linkedin.com/in/adrian-guevara-alonso/"
-                                role = "button"
-                                target="_blank"
-                                i(classes = "fab fa-linkedin-in")
+                        if(enableGamesBackground) {
+                            div("pad-container") {
+                                a(classes = "btn btn-primary btn-circle m-1", target = "_blank") {
+                                    style = "background-color: #0082ca;"
+                                    href = "https://www.linkedin.com/in/adrian-guevara-alonso/"
+                                    role = "button"
+                                    target = "_blank"
+                                    i(classes = "fab fa-linkedin-in")
+                                }
                             }
                         }
 

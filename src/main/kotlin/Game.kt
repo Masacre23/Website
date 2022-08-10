@@ -216,7 +216,11 @@ class Game(val htmlManager: HtmlManager) {
 
         ctx.font = (canvas.width / scale.x / 100).toString() + "px pixel"
         ctx.fillStyle = "rgba(125, 93, 59, 0.6)"
-        ctx.fillText("Game Developer", canvas.width / scale.x / 50 + camGlobalPos.x, canvas.height / scale.y / 5.6 + camGlobalPos.y)
+
+        if(htmlManager.enableGamesBackground)
+            ctx.fillText("Game Developer", canvas.width / scale.x / 50 + camGlobalPos.x, canvas.height / scale.y / 5.6 + camGlobalPos.y)
+        else
+            ctx.fillText("Game & Web Developer", canvas.width / scale.x / 50 + camGlobalPos.x, canvas.height / scale.y / 5.6 + camGlobalPos.y)
 
         ctx.font = (0.7 * sizeX).toString() + "px calibri"
         ctx.fillStyle = "rgba(0, 0, 0, 0.6)"
