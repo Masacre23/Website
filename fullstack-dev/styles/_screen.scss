@@ -1,0 +1,49 @@
+.screen-border{
+	background-color: #333;
+    width: 90%;
+    //margin-left: 5%;
+    //margin-right: 5%;
+    margin: auto;
+    max-width: 1400px;
+    box-sizing: border-box;
+    border: 0.4rem solid #ffe9bd;
+    border-radius: 0.8rem;
+    border-top-color: #a36d00;
+    border-right-color: $terciaryColor;
+    border-bottom-color: #ffd88a;
+    text-align: center;
+
+    @media screen and (max-height: 900px){
+        max-width: 1200px;
+    }
+
+    @media screen and (max-height: 840px){
+        max-width: 1000px;
+    }
+
+    @media screen and (max-height: 728px){
+        max-width: 800px;
+    }
+
+    @media screen and (max-height: 630px){
+        max-width: 650px;
+    }
+
+    @media screen and (max-height: 550px){
+        max-width: 580px;
+    }
+
+    .screen {
+    	background-color: #bfbdbf;
+    	margin: 2rem auto;
+    	width: 90%;
+    	margin-bottom: 0;
+    	//height: 21rem;
+    }
+
+    img {
+    	opacity: 0.7;
+    	width: 17.5rem;
+    	margin: 0.5rem;
+    }
+}

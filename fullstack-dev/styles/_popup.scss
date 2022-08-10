@@ -1,0 +1,62 @@
+.popup {
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	white-space: break-spaces;
+
+	.modal-content {
+		//background: linear-gradient(135deg, white, $mainColor);//rgb(125, 93, 59));
+		background: linear-gradient(10deg, $firstColor, $secondaryColor, $terciaryColor);
+		border: none;
+		padding: 25px;
+		color: #000000a6;
+
+		.images-container {
+			margin: auto;
+			@media screen and (min-width: 992px){
+				display: flex;
+			}
+		}
+
+		img.profile {
+			width: fit-content;
+    		margin: auto;
+    		border-radius: 50%;
+    		margin-top: 15px;
+    		margin-bottom: 20px;
+		}
+
+		b{
+			color: black;
+		}
+
+		h1 {
+			color: black;
+			text-decoration: underline;
+		}
+
+		ul {
+			text-align: left;
+			list-style-type: none;
+			padding: 0;
+    		margin: 0;
+
+			li {
+				background: url(img/face.png) no-repeat left top 15px;
+			    background-size: 25px 25px;
+			    padding-left: 40px;
+			    padding-top: 20px;
+			    margin: 0 0 40px 0;
+			    text-align: justify;
+			}
+		}
+
+		p{
+			text-align: justify;
+		}
+
+		span.close {
+			//font: 14px 'Lucida Console', Monaco, monospace;
+			//text-shadow: 0 0 3px rgb(255 255 255 / 80%);
+		}
+	}
+}

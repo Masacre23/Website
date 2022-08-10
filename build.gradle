@@ -52,6 +52,14 @@ task deploy() {
             from 'build/processedResources/js/main'
             into 'build/../'
         }
+        copy {
+            from 'build/distributions/MyWeb.js'
+            into 'build/../fullstack-dev/'
+        }
+        copy {
+            from 'build/processedResources/js/main'
+            into 'build/../fullstack-dev/'
+        }
         delete 'main.css.map'
         delete 'main.scss'
         delete 'styles'
