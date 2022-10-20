@@ -11744,6 +11744,11 @@ footer .fab {
   line-height: 1.725 !important;
 }
 
+.carousel ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
 .carousel .list-inline {
   white-space: nowrap;
   overflow-x: auto;

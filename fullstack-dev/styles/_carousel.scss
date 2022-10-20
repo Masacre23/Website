@@ -1,8 +1,13 @@
 .carousel {	
 
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
+
 	.list-inline {
 	    white-space:nowrap;
-	    overflow-x:auto;
+	    overflow-x: auto;
 
 	    @media screen and (max-width: 991px){
 			justify-content: flex-start !important;

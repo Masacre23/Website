@@ -424,6 +424,19 @@ class HtmlManager (){
                 h1 { +"Experience" }
                 ul {
                     li {
+                        style = "background-image: url(img/brave-zebra.png);"
+                        strong { +"< 1 year " }
+                        + "of experience in "
+                        strong { +"Brave Zebra" }
+                        +" (2022-now). \n\n"
+                        strong { +"Brave Zebra" }
+                        +" is an outsourcing company that works with Unity and it has their own projects too. For now I participated in 2 projects, Drest and Moonlighter.\n\n"
+                        strong { +"Drest" }
+                        +" is a mobile app where you have to dress a girl to become a fashion designer. It has a lot of UI elements, like the avatar girl, advanced UI components and shaders.\n\n"
+                        strong { +"Moonlighter" }
+                        +" is a game made by a sibling company called Digital Sun, we gave them support from time to time."
+                    }
+                    li {
                         style = "background-image: url(img/playjoy.png);"
                         //+"Playjoy es una app de juegos de mesa para movil, en la cual me he encargado de programar la mayoría de los juegos, "
                         //+ "también me he encargado del backend de la página web, algunas características de la app como el sistema de pagos"
@@ -431,10 +444,10 @@ class HtmlManager (){
                         /*+"Playjoy is a collection of different board games like, domino, ludo, UNO,... It's available for desktop, android and IOS."
                         +"I have programmed most of the games, the web page backend, some app features like in-app purchases."
                         +"Furthermore, I had the opportunity of managing a few junior programmers and teach them. (2017-now)"*/
-                        strong { +"5 years " }
+                        strong { +"2 years " }
                         +"of experience in "
                         strong { +"Playjoy" }
-                        +" (2017-now).\n\n"
+                        +" (2020-2022).\n\n"
                         strong { +"Playjoy " }
                         +"is an app and a website with a collection of different "
                         strong { +"board games "}
@@ -503,8 +516,49 @@ class HtmlManager (){
 
             work = popup("modal-xl", "Work", stretch = false) {
                 h1 { +"Work" }
-                carousel(indicatorsImages = listOf("img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png") + if(enableGamesBackground) listOf("img/grefusitos1.webp", "img/fallas.jpg") else listOf(), stretch = false) {
+                carousel(indicatorsImages = listOf("img/drest.webp", "img/moonlighter.jpg", "img/bingo3.png", "img/durak.png","img/parchis.png","img/chupate2.png", "img/chinchon.png") + if(enableGamesBackground) listOf("img/grefusitos1.webp", "img/fallas.jpg") else listOf(), stretch = false) {
                     carouselItem(true) {
+                        div("embed-responsive embed-responsive-16by9") {
+                            iframe(classes = "embed-responsive-item") {
+                                src = "https://player.vimeo.com/video/726081645?autoplay=1&background=1&loop=1"
+
+                                attributes["frameborder"] = "0"
+                                attributes["allowfullscreen"] = "true"
+
+                                style = "width: 97%"
+                            }
+                        }
+                        p {
+                            b {
+                                +"Drest("
+                                a(href = "https://apps.apple.com/us/app/drest/id1477620933", target = "_blank") { +"Store" }
+                                +"): "
+                            }
+
+                            +"It’s a mobile app where you have to dress a girl to become a fashion designer. It has a lot of UI elements, like the avatar girl, advanced UI components and shaders."
+                        }
+                    }
+                    carouselItem {
+                        div("embed-responsive embed-responsive-16by9") {
+                            iframe(classes = "embed-responsive-item") {
+                                src = "https://www.youtube.com/embed/81FJurvZuOg"
+
+                                attributes["frameborder"] = "0"
+                                attributes["allowfullscreen"] = "true"
+                            }
+                        }
+                        p {
+                            b {
+                                +"Moonlighter("
+                                a(href = "https://store.steampowered.com/app/606150/Moonlighter/", target = "_blank") { +"Store" }
+                                +"): "
+                            }
+
+                            +"Roguelike game made by Digital Sun, a sibling company of Brave Zebra. The game started in Brave Zebra and now we are giving them support with ports, new content and bugfixes."
+                        }
+                    }
+
+                    carouselItem {
                         div("images-container"){
                             style = "max-width: 70%;"
                             div("embed-responsive embed-responsive-16by9") {
