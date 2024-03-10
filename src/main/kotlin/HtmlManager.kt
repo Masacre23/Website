@@ -424,13 +424,22 @@ class HtmlManager (){
                 h1 { +"Experience" }
                 ul {
                     li {
+                        style = "background-image: url(img/drest_icon.jpg);"
+                        strong { +"1 year " }
+                        + "of experience in "
+                        strong { +"Drest" }
+                        +" (2023-now). \n\n"
+                        //strong { +"Drest" }
+                        +"I’m continuing what I’ve started in Braze Zebra but I have more responsibilities now, I’m the main UI/feature developer.\n\nAside from developing the features, I take care of the technical planning and organize the work of the other devs that will help the feature."
+                    }
+                    li {
                         style = "background-image: url(img/brave-zebra.png);"
-                        strong { +"< 1 year " }
+                        strong { +"1 year " }
                         + "of experience in "
                         strong { +"Brave Zebra" }
-                        +" (2022-now). \n\n"
+                        +" (2022-2023). \n\n"
                         strong { +"Brave Zebra" }
-                        +" is an outsourcing company that works with Unity and it has their own projects too. For now I participated in 2 projects, Drest and Moonlighter.\n\n"
+                        +" is an outsourcing company that works with Unity and it has their own projects too. I participated in 2 projects, Drest and Moonlighter.\n\n"
                         strong { +"Drest" }
                         +" is a mobile app where you have to dress a girl to become a fashion designer. It has a lot of UI elements, like the avatar girl, advanced UI components and shaders.\n\n"
                         strong { +"Moonlighter" }
